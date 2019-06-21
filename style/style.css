@@ -1,0 +1,151 @@
+*{
+  
+}
+header{
+  color: #333;
+}
+
+ p{
+    color: white ;
+ }  
+ 
+ .btn-select{
+    padding: 4px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    background-color: #c2d2ef;
+    margin-top: 22px;
+}
+.section-exchange{
+  margin-top: 50px;
+}
+#currency {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#currency td, #currency th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#currency tr:nth-child(even){background-color: #f2f2f2;}
+
+#currency tr:hover {background-color: #ddd;}
+
+#currency th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #c2d2ef;
+    color: white;
+}
+
+.title-box{
+    text-align: center;
+    background-color: black;
+    color: white;
+    
+    font-weight: 900;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.hotel-description{
+    padding:15px;
+    border:1px solid #ded9d9;
+margin-bottom: 30px;
+}
+.hotel-detail h3{
+        color: blue;
+    font-size: x-large;
+}
+.button .btn-learn{
+
+    background-color: blue;
+    color: white;
+    margin-top: 100px;
+    float: right;
+}
+.paraglide-description{
+    padding:15px;
+    border:1px solid #ded9d9;
+margin-bottom: 30px;
+}
+.paraglide-detail h3{
+        color: blue;
+    font-size: x-large;
+}
+
+.cities-img{
+  height: 250px;
+
+   margin-bottom: 30px;
+}
+.cities-img div {
+  background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:100%;
+    width:100%;
+   
+}
+.cities-img:hover{
+    border: 3px solid #F7FE2E;
+}
+.cities-img p{
+    font-size: 50px;
+    text-align:  center;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.pokhara-section h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.col-sm-6{
+    width: 49%;
+}
+.pokhara-section{
+    
+    color: black;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    font-size: 20px;
+    
+    margin-bottom: 30px;
+}
+.pokhara-experience{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.pokhara-experience h1{
+    margin-bottom: 30px;
+}
+.blue-sky h2{
+    font-weight: bolder;
+    color: blue;
+}
+.blue-sky p{
+    font-size: 17px;
+    line-height: 1.7;
+
+}
+.btn-book{
+    background-color: blue;
+    color:white;
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.btn-book:hover{
+    background-color: white;
+    color: blue;
+    border:1px solid black;
+}
+

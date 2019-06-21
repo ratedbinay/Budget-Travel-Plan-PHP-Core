@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bugdet Travel Plan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" href="css/font-awesome.css" type="text/css"/>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <script src="d3.min.js?v=3.2.8"></script>
+
+  <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+
+ 
+
+</head>
+<body>
+
+
+
+ <!-- <table datasrc='#data'>
+  
+  <thead>
+     <tr>
+      <th>CUR</th><th>Unit</th><th>BP</th><th>SP</th>
+    </tr>
+  </thead>
+
+  <tbody> <tr>
+     <td><span datafld='number'> </span></td>
+     <td><span datafld='english'></span></td>
+     <td><span datafld='french'> </span></td>
+     <td><span datafld='german'> </span></td>
+  </tbody>
+
+</table>
+
+
+<object ID=data classid="clsid:333C7BC4-460F-11D0-BC04-0080C7055A83">
+  <param nAme="DataURL" value="d:/rates.csv">
+  <param nAme="UseHeader" value="true">
+</object>
+-->
+
+
+
+        <script type="text/javascript"charset="utf-8">
+            d3.text("d:/rates.csv", function(data) {
+                var parsedCSV = d3.csv.parseRows(data);
+                var container = d3.select("body")
+                    .append("table")
+                    .selectAll("tr")
+                        .data(parsedCSV).enter()
+                        .append("tr")
+                    .selectAll("td")
+                        .data(function(d) { return d; }).enter()
+                        .append("td")
+                        .text(function(d) { return d; });
+            });
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+          <div class="col-lg-offset-2 col-lg-8">
+      <table id="currency">
+  <tr>
+    <th>Currency</th>
+    <th>Amount</th>
+    <th>Rate</th>
+    <th>Total</th>
+    <th>Select</th>
+  </tr>
+  <tr>
+    <td>USD</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <a href="city.html">Select</a>
+  </tr>
+  <tr>
+    <td>Euro</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <a href="city.html">Select</a>
+  </tr>
+  <tr>
+    <td>Australian dollar</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <a href="city.html">Select</a>
+  </tr>
+  <tr>
+    <td>Pound</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td> <a href="city.html">Select</a>
+  </tr>
+  
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
